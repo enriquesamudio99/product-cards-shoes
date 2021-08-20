@@ -31,6 +31,13 @@ img {
 .container {
     width: 100%;
     padding: 0 1rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
 }
 
 .logo {
@@ -52,7 +59,7 @@ img {
 }
 
 .main {
-    margin-top: 5rem;
+    margin: 5rem auto;
 }
 
 .cards {
@@ -60,6 +67,24 @@ img {
     grid-template-columns: max-content;
     justify-content: center;
     gap: 1rem;
+}
+
+@media (min-width: 576px) {
+    .cards {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media (min-width: 992px) {
+    .cards {
+        grid-template-columns: repeat(3, max-content);
+    }
+}
+
+@media (min-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(4, max-content);
+    }
 }
 
 .card {
