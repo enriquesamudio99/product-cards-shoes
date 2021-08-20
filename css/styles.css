@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --green: #39593D;
+    --greenTwo: #27412b;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: var(--black);
+    margin-left: .5rem;
+    top: 45%;
+}
+
+.main {
+    margin-top: 5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: max-content;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    width: 280px;
+    border-radius: 1rem;
+    border: 1px solid #dfdfdf;
+}
+
+.card-image {
+    padding: 1.5rem;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    margin: 1.5rem 0;
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-bottom: .75rem;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #4B4B4B;
+    margin-bottom: .75rem;
+}
+
+.card-price {
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: block;
+    background-color: var(--green);
+    padding: .5rem 0;
+    border-radius: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--greenTwo);
+}
