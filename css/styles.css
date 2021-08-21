@@ -71,31 +71,31 @@ img {
 
 .cards {
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: 1fr;
     justify-content: center;
     gap: 1rem;
 }
 
 @media (min-width: 576px) {
     .cards {
-        grid-template-columns: repeat(2, max-content);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 992px) {
     .cards {
-        grid-template-columns: repeat(3, max-content);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 1200px) {
     .cards {
-        grid-template-columns: repeat(4, max-content);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 .card {
-    width: 280px;
+    width: 100%;
     border-radius: 1rem;
     border: 1px solid #dfdfdf;
 }
@@ -143,8 +143,8 @@ img {
 .button {
     display: block;
     background-color: var(--green);
-    padding: .5rem 0;
-    border-radius: 1rem;
+    padding: 1rem 0;
+    border-radius: 2rem;
     color: var(--white);
     text-transform: uppercase;
     font-weight: 700;
